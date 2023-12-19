@@ -1,3 +1,4 @@
+const proxyUrl = "https://cors-anywhere.herokuapp.com/";
 const apiProducts = "https://fakestoreapi.com/products";
 const apiCategories = "https://fakestoreapi.com/products/categories";
 const displayCat = document.querySelectorAll(".catLinks");
@@ -6,7 +7,7 @@ const bestSellerTitle = document.querySelector(".bestSellerTitle");
 const getBestSeller = document.querySelector(".bestSeller");
 const getProducts = document.querySelector(".products");
 
-fetch(apiProducts)
+fetch(proxyUrl + apiProducts)
   .then((response) => {
     if (!response.ok) {
       throw new Error("Network not ok");
@@ -27,7 +28,7 @@ fetch(apiProducts)
     console.log(error);
   });
 
-fetch(apiCategories)
+fetch(proxyUrl + apiCategories)
   .then((response) => {
     if (!response.ok) {
       throw new Error("Network not ok");
