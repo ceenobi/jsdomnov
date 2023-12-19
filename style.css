@@ -1,0 +1,35 @@
+
+* {
+  text-decoration: none !important;
+  scroll-behavior: smooth;
+}
+
+.adjustMargin {
+  margin-top: 4rem;
+}
+
+.img-adjust {
+  height: 450px;
+}
+
+section {
+  min-height: 90vh;
+}
+
+.imgResize {
+  width: 70%;
+  height: 250px;
+  margin: 0 auto;
+}
+
+@media (min-width: 992px) {
+  .adjustMargin {
+    margin-top: 8.5rem;
+  }
+  .img-adjust {
+    height: 450px;
+  }
+  .card-size {
+    width: 300px;
+  }
+}
