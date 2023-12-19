@@ -89,6 +89,7 @@ function displayBestSeller(data) {
     .map(
       (product) => `<div class="col-12 col-lg-4 mb-4">
    <h4>${product.title}</h4>
+   <p class="fw-bold fs-4">$ ${product.price}</p>
   </div>
   <div class="col-12 col-lg-8 text-center">
    <img src=${product.image} class="img-fluid img-adjust"/>
